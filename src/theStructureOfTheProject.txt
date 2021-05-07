@@ -1,0 +1,38 @@
+Class:
+1. Flight:
+Id
+departureDate
+returnDate
+Arrival city
+Boolean is landed
+Boolean is delayed
+Flight company(enum)
+Week day(enum)
+Price
+
+2. Scale:
+Scale
+Date of landing
+Date of the next flight
+
+3. Passenger:
+CNP
+name
+age
+
+4 Reservation
+Id flight
+Full price
+Date of the reservation
+un map(passenger, Place in flight)
+
+5. Data creator:
+list de pasageri : createPassagersList(New...)
+creare rezervari, createReservatuionList(new..)
+
+6. DataReader:
+lista de zboruri si zboruri de escala: citeste zboruri din flight.txt(line.split)
+
+7. GenerateFile:
+void generateReservatonFile(Reservetion reservation)
+scriu propozitii
