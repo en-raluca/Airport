@@ -1,4 +1,4 @@
-package Airport;
+package Model;
 
 public enum FlightCompany{
     QATAR(1,"Qatar Airways"),

@@ -1,7 +1,6 @@
-package Airport;
+package Model;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 //public class FlightScale extends Flight implements Discountable{
 public class FlightScale extends Flight{
@@ -9,10 +8,10 @@ public class FlightScale extends Flight{
     private LocalDateTime landingDate;
     private LocalDateTime theNextFlightDate;
 
-    public FlightScale(int id, LocalDateTime departureDate, LocalDateTime returnDate,
+    public FlightScale(int id, LocalDateTime departureDate, LocalDateTime returnDate, String departureCity,
                        String arrivalCity, boolean isLanded, boolean isDelayed, double price,
                        String scale, LocalDateTime landingDate, LocalDateTime theNextFlightDate) {
-        super(id, departureDate, returnDate, arrivalCity, isLanded, isDelayed, price);
+        super(id, departureDate, returnDate, departureCity,  arrivalCity, isLanded, isDelayed, price);
         this.theNextFlightDate = theNextFlightDate;
         this.landingDate = landingDate;
         this.scaleCity = scale;

@@ -1,4 +1,4 @@
-package Airport;
+package Model;
 
 public class Passenger {
     private String cnp;

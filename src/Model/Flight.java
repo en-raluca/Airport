@@ -1,13 +1,12 @@
-package Airport;
+package Model;
 
 import java.time.LocalDateTime;
-import java.util.Date;
-import java.util.Objects;
 
 public class Flight {
     private int id;
     private LocalDateTime departureDate;
     private LocalDateTime returnDate;
+    private String departureCity;
     private String arrivalCity;
     private boolean isLanded;
     private boolean isDelayed;
@@ -16,8 +15,9 @@ public class Flight {
     public Flight(){
         
     }
-    public Flight(int id, LocalDateTime departureDate, LocalDateTime returnDate, String arrivalCity, boolean isLanded,
+    public Flight(int id, LocalDateTime departureDate, LocalDateTime returnDate, String departureCity,  String arrivalCity, boolean isLanded,
                   boolean isDelayed, double price){
+        this.departureCity = departureCity;
         this.id = id;
         this.returnDate = returnDate;
         this.departureDate = departureDate;
@@ -25,6 +25,14 @@ public class Flight {
         this.isLanded = isLanded;
         this.isDelayed = isDelayed;
         this.price = price;
+    }
+
+    public String getDepartureCity() {
+        return departureCity;
+    }
+
+    public void setDepartureCity(String departureCity) {
+        this.departureCity = departureCity;
     }
 
     public void setId(int id) {

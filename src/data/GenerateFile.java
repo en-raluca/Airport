@@ -1,7 +1,5 @@
 package data;
 
-import Airport.Reservation;
-
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;

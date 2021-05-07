@@ -1,7 +1,7 @@
 package data;
 
-import Airport.Flight;
-import Airport.FlightScale;
+import Model.Flight;
+import Model.FlightScale;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -37,14 +37,15 @@ public class DataReader {
                 String idToBeConverted = words[0].trim();
                 String departureDateToBeConverted = words[1].trim();
                 String returnDateToBeConverted = words[2].trim();
-                String arrivalCity = words[3].trim();
-                String isLandedToBeConverted = words[4].trim();
-                String isDelayedToBeConverted = words[5].trim();
-                String priceToBeConverted = words[6].trim();
-                if (words[7].trim() == "True"){
-                    String scaleCity = words[8].trim();
-                    String landingDateToBeConverted = words[9].trim();
-                    String theNextFlightDateToBeConverted = words[10].trim();
+                String departureCity = words[3].trim();
+                String arrivalCity = words[4].trim();
+                String isLandedToBeConverted = words[5].trim();
+                String isDelayedToBeConverted = words[6].trim();
+                String priceToBeConverted = words[7].trim();
+                if (words[8].trim() == "True"){
+                    String scaleCity = words[9].trim();
+                    String landingDateToBeConverted = words[10].trim();
+                    String theNextFlightDateToBeConverted = words[11].trim();
                     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
                     LocalDateTime departureDate = LocalDateTime.parse(departureDateToBeConverted, dtf);
                     LocalDateTime returnDate = LocalDateTime.parse(returnDateToBeConverted, dtf);
@@ -56,7 +57,7 @@ public class DataReader {
                     boolean isDelayedBoolean = Boolean.parseBoolean(isLandedToBeConverted);
                     double price = Double.parseDouble(priceToBeConverted);
 
-                    FlightScale flightScale = new FlightScale(id, departureDate, returnDate, arrivalCity,
+                    FlightScale flightScale = new FlightScale(id, departureDate, returnDate, departureCity,arrivalCity,
                             isLandedBoolean, isDelayedBoolean, price, scaleCity, landingDate, theNextFlightDate);
                     personList.add(flightScale);
                 }
@@ -70,7 +71,7 @@ public class DataReader {
                     boolean isDelayedBoolean = Boolean.parseBoolean(isLandedToBeConverted);
                     double price = Double.parseDouble(priceToBeConverted);
 
-                    Flight flight = new Flight(id, departureDate, returnDate, arrivalCity,
+                    Flight flight = new Flight(id, departureDate, returnDate, departureCity, arrivalCity,
                             isLandedBoolean, isDelayedBoolean, price);
                     personList.add(flight);
                 }

@@ -1,4 +1,4 @@
-package Airport;
+package Model;
 
 public enum WeekDay{
         MONDAY(1,"Mon"),

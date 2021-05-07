@@ -1,13 +1,8 @@
 package data;
 
-import Airport.Flight;
-import Airport.Passenger;
-import Airport.Reservation;
+import Model.Passenger;
+import Model.Reservation;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
