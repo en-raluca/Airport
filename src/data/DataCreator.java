@@ -1,13 +1,15 @@
 package data;
 
-import Model.Passenger;
-import Model.Reservation;
+import model.Passenger;
+import model.Reservation;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.*;
+
 
 public class DataCreator {
     public List<Passenger> somePassengerList() {
@@ -51,9 +53,9 @@ public class DataCreator {
 
     public List<Reservation> someListOfReservation(){
 
-        LocalDateTime d1 = LocalDateTime.parse("2015-02-20T06:30:00");
-        LocalDateTime d2 = LocalDateTime.parse("2015-03-20T06:30:00");
-        LocalDateTime d3 = LocalDateTime.parse("2015-04-20T06:30:00");
+        LocalDateTime d1 = LocalDateTime.parse("2022-02-20T06:30:00");
+        LocalDateTime d2 = LocalDateTime.parse("2025-03-20T06:30:00");
+        LocalDateTime d3 = LocalDateTime.parse("2025-04-20T06:30:00");
         LocalDateTime d4 = LocalDateTime.parse("2015-05-20T06:30:00");
         LocalDateTime d5 = LocalDateTime.parse("2015-06-20T06:30:00");
         LocalDateTime d6 = LocalDateTime.parse("2015-07-20T06:30:00");
@@ -62,7 +64,7 @@ public class DataCreator {
         LocalDateTime d9 = LocalDateTime.parse("2015-12-20T06:30:00");
         LocalDateTime d10 = LocalDateTime.parse("2015-11-20T06:30:00");
 
-        Map<String, String> passengerPlacesInFlight = new HashMap<>();
+        TreeMap<String, String> passengerPlacesInFlight = new TreeMap<>();
 
         passengerPlacesInFlight.put("Havarneanu Matei", "1a");
         passengerPlacesInFlight.put("Vasile", "2a");
@@ -80,16 +82,16 @@ public class DataCreator {
         passengerPlacesInFlight.put("Silvia", "25a");
         passengerPlacesInFlight.put("Alexandra", "26a");
 
-        Reservation r1 = new Reservation(1, 10234, 234.3, d1, passengerPlacesInFlight);
-        Reservation r2 = new Reservation(2, 27680, 234.3, d2, passengerPlacesInFlight);
-        Reservation r3 = new Reservation(3, 27690, 234.3, d3, passengerPlacesInFlight);
-        Reservation r4 = new Reservation(4, 27890, 234.3, d4, passengerPlacesInFlight);
-        Reservation r5 = new Reservation(5, 276890, 234.3, d5, passengerPlacesInFlight);
-        Reservation r6 = new Reservation(6, 26890, 234.3, d6, passengerPlacesInFlight);
-        Reservation r7 = new Reservation(7, 27689, 234.3, d7, passengerPlacesInFlight);
-        Reservation r8 = new Reservation(8, 76890, 234.3, d8, passengerPlacesInFlight);
-        Reservation r9 = new Reservation(9, 27890, 234.3, d9, passengerPlacesInFlight);
-        Reservation r10 = new Reservation(10, 2768, 234.3, d10, passengerPlacesInFlight);
+        Reservation r1 = new Reservation(1, 10234, 234.3, d1, passengerPlacesInFlight.subMap("Lala", "Vivi"));
+        Reservation r2 = new Reservation(2, 27680, 234.3, d2, passengerPlacesInFlight.subMap("Lala", "Matei"));
+        Reservation r3 = new Reservation(3, 27690, 234.3, d3, passengerPlacesInFlight.subMap("Lala", "Mim"));
+        Reservation r4 = new Reservation(4, 27890, 234.3, d4, passengerPlacesInFlight.subMap("Sylvester", "Vivi"));
+        Reservation r5 = new Reservation(5, 276890, 234.3, d5, passengerPlacesInFlight.subMap("Vasile", "Vivi"));
+        Reservation r6 = new Reservation(6, 26890, 234.3, d6, passengerPlacesInFlight.subMap("Gabriel", "Sisi"));
+        Reservation r7 = new Reservation(7, 27689, 234.3, d7, passengerPlacesInFlight.subMap("Alexandra", "Gabriel"));
+        Reservation r8 = new Reservation(8, 76890, 234.3, d8, passengerPlacesInFlight.subMap("Mim", "Sisi"));
+        Reservation r9 = new Reservation(9, 27890, 234.3, d9, passengerPlacesInFlight.subMap("Alexandra", "Lala"));
+        Reservation r10 = new Reservation(10, 2768, 234.3, d10, passengerPlacesInFlight.subMap("Silvia", "Stalone"));
 
         List<Reservation> reservationList = new ArrayList<>();
 
@@ -106,4 +108,5 @@ public class DataCreator {
 
         return reservationList;
     }
+
 }

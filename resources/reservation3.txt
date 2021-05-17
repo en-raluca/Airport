@@ -1,0 +1,7 @@
+Idul rezervarii: 3
+Flight id: 27690
+Full Price: 234.3
+Reservation date: 2025-04-20T06:30
+Name: Lala, Seat: 3a
+Name: Lili, Seat: 8a
+Name: Matei, Seat: 22a

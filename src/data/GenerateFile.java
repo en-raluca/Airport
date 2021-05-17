@@ -1,15 +1,18 @@
 package data;
 
+import model.Reservation;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Map;
 
 public class GenerateFile {
-    public static void main(String[] args){
+    public void generateFile(Reservation reservation){
 
         String directoryName = "./resources";
-        String fileName = "/reservation.txt";
+        String fileName = "/reservation" + reservation.getReservationId() + ".txt";
         File dir = new File(directoryName);
 
         if(!dir.exists()){
@@ -30,11 +33,20 @@ public class GenerateFile {
         try{
             fw = new FileWriter(file);
             bw = new BufferedWriter(fw);
-            bw.write("Cluj");
+            bw.write("Idul rezervarii: " + reservation.getReservationId());
             bw.newLine();
-            bw.write("Bucuresti");
+            bw.write("Flight id: " + reservation.getFlightId());
             bw.newLine();
-
+            bw.write("Full Price: " + reservation.getFullPrice());
+            bw.newLine();
+            bw.write("Reservation date: " + reservation.getReservationDate());
+            bw.newLine();
+            for(Map.Entry<String, String> entry : reservation.getPassengersMap().entrySet())
+            {
+                bw.write("Name: " + entry.getKey());
+                bw.write(", Seat: " + entry.getValue());
+                bw.newLine();
+            }
             bw.flush();
         }
         catch (IOException e){

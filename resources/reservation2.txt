@@ -1,0 +1,6 @@
+Idul rezervarii: 2
+Flight id: 27680
+Full Price: 234.3
+Reservation date: 2025-03-20T06:30
+Name: Lala, Seat: 3a
+Name: Lili, Seat: 8a

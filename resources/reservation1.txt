@@ -1,0 +1,14 @@
+Idul rezervarii: 1
+Flight id: 10234
+Full Price: 234.3
+Reservation date: 2022-02-20T06:30
+Name: Lala, Seat: 3a
+Name: Lili, Seat: 8a
+Name: Matei, Seat: 22a
+Name: Mim, Seat: 21a
+Name: Silvia, Seat: 25a
+Name: Sisi, Seat: 24a
+Name: Stalone, Seat: 6a
+Name: Sylvester, Seat: 5a
+Name: Vasile, Seat: 2a
+Name: Vasilescu, Seat: 9a

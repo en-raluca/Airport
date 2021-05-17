@@ -1,4 +1,4 @@
-package Model;
+package model;
 
 import java.time.LocalDateTime;
 import java.util.Map;
@@ -9,6 +9,7 @@ public class Reservation {
     private double fullPrice;
     private LocalDateTime reservationDate;
     private Map<String,String> passengersMap;
+    public Reservation(){}
     public Reservation(int reservationId, int flightId, double fullPrice, LocalDateTime reservationDate, Map<String,String> passengersMap){
         this.reservationId = reservationId;
         this.flightId = flightId;
@@ -60,7 +61,7 @@ public class Reservation {
     @Override
     public String toString(){
         return "Reservation id: " + reservationId + ", flight id: "+ flightId +
-            ", date: " + reservationDate + "price: " + fullPrice;
+            ", date: " + reservationDate + "price: " + fullPrice + "\n";
     }
 
     @Override

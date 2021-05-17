@@ -1,4 +1,4 @@
-package Model;
+package model;
 
 import java.time.LocalDateTime;
 
@@ -11,12 +11,13 @@ public class Flight {
     private boolean isLanded;
     private boolean isDelayed;
     private double price;
+    private FlightCompany company;
 
     public Flight(){
         
     }
     public Flight(int id, LocalDateTime departureDate, LocalDateTime returnDate, String departureCity,  String arrivalCity, boolean isLanded,
-                  boolean isDelayed, double price){
+                  boolean isDelayed, double price, FlightCompany company){
         this.departureCity = departureCity;
         this.id = id;
         this.returnDate = returnDate;
@@ -25,6 +26,15 @@ public class Flight {
         this.isLanded = isLanded;
         this.isDelayed = isDelayed;
         this.price = price;
+        this.company = company;
+    }
+
+    public FlightCompany getCompany() {
+        return company;
+    }
+
+    public void setCompany(FlightCompany company) {
+        this.company = company;
     }
 
     public String getDepartureCity() {
@@ -108,8 +118,8 @@ public class Flight {
 
     @Override
     public String toString(){
-        return "Id = " + id + "arrival city: " + arrivalCity + "departure date: " + departureDate + "return date: "
-                + returnDate + "landed: " + isLanded + " delayed: " + isDelayed + "price: " + price;
+        return "Id = " + id + ", arrival city: " + arrivalCity + ", departure date: " + departureDate + ", return date: "
+                + returnDate + ", landed: " + isLanded + ", delayed: " + isDelayed + ", price: " + price + "\n";
     }
 
 

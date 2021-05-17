@@ -1,0 +1,8 @@
+Idul rezervarii: 9
+Flight id: 27890
+Full Price: 234.3
+Reservation date: 2015-12-20T06:30
+Name: Alexandra, Seat: 26a
+Name: Gabriel, Seat: 23a
+Name: George, Seat: 7a
+Name: Havarneanu Matei, Seat: 1a

@@ -1,0 +1,5 @@
+Idul rezervarii: 7
+Flight id: 27689
+Full Price: 234.3
+Reservation date: 2015-08-20T06:30
+Name: Alexandra, Seat: 26a

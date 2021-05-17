@@ -1,0 +1,12 @@
+Idul rezervarii: 6
+Flight id: 26890
+Full Price: 234.3
+Reservation date: 2015-07-20T06:30
+Name: Gabriel, Seat: 23a
+Name: George, Seat: 7a
+Name: Havarneanu Matei, Seat: 1a
+Name: Lala, Seat: 3a
+Name: Lili, Seat: 8a
+Name: Matei, Seat: 22a
+Name: Mim, Seat: 21a
+Name: Silvia, Seat: 25a

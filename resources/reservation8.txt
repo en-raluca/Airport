@@ -1,0 +1,6 @@
+Idul rezervarii: 8
+Flight id: 76890
+Full Price: 234.3
+Reservation date: 2015-09-20T06:30
+Name: Mim, Seat: 21a
+Name: Silvia, Seat: 25a

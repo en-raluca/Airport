@@ -1,17 +1,17 @@
-package Model;
+package model;
 
 import java.time.LocalDateTime;
 
-//public class FlightScale extends Flight implements Discountable{
-public class FlightScale extends Flight{
+public class FlightScale extends Flight implements Discountable{
+
     private String scaleCity;
     private LocalDateTime landingDate;
     private LocalDateTime theNextFlightDate;
 
     public FlightScale(int id, LocalDateTime departureDate, LocalDateTime returnDate, String departureCity,
                        String arrivalCity, boolean isLanded, boolean isDelayed, double price,
-                       String scale, LocalDateTime landingDate, LocalDateTime theNextFlightDate) {
-        super(id, departureDate, returnDate, departureCity,  arrivalCity, isLanded, isDelayed, price);
+                       String scale, LocalDateTime landingDate, LocalDateTime theNextFlightDate, FlightCompany company) {
+        super(id, departureDate, returnDate, departureCity,  arrivalCity, isLanded, isDelayed, price, company);
         this.theNextFlightDate = theNextFlightDate;
         this.landingDate = landingDate;
         this.scaleCity = scale;
@@ -41,10 +41,14 @@ public class FlightScale extends Flight{
         this.theNextFlightDate = theNextFlightDate;
     }
 
+    @Override
+    public void applyDiscount(double percent){
+        double actualPrice = getPrice();
+        double newPrice = actualPrice - (actualPrice * percent / 100);
+        setPrice(newPrice);
+    }
 //    @Override
-//    public void applyDiscount(int percent){
-//        double actualPrice = getPrice();
-//        double newPrice = actualPrice - (actualPrice * percent / 100);
-//        setPrice(newPrice);
+//    public toString(){
+//
 //    }
 }

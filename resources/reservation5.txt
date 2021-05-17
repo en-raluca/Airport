@@ -1,0 +1,6 @@
+Idul rezervarii: 5
+Flight id: 276890
+Full Price: 234.3
+Reservation date: 2015-06-20T06:30
+Name: Vasile, Seat: 2a
+Name: Vasilescu, Seat: 9a

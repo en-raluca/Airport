@@ -1,20 +1,20 @@
-1026734, 21/1/2009 12:20:20, 22/10/2012 19:20:20, Iasi, Roma, True, False, 123, True, 23/10/2012 12:20:00, 14:22:00, Barcelona
-105634, 22/2/2008 12:20:20, 22/10/2012 19:20:20, Breazu, Vienna, False, False, 123.34, False
-202344, 23/3/2007 12:20:20, 22/10/2012 19:20:20, Roma, Bucharest, True, True, 40, False
-32234324, 24/4/2006 12:20:20, 22/10/2012 19:20:20, Vienna, Warsow, False, True, 50, False
-1654544, 25/5/2020 12:20:20, 22/10/2012 19:20:20, Bucharest, Washington, True, True, 29.99, True, 23/10/2012 16:20:20, 18:22:00, Varsovia
-1984394, 26/6/2021 12:20:20, 22/10/2012 19:20:20, Cluj, Otopeni,False, False, 30, False
-146834, 20/7/2022 12:20:20, 22/10/2012 19:20:20, Washington, Chicago, True, True, 51, True, 23/10/2012 16:20:20, 18:22:00, Budapesta
-184985, 27/8/2023 12:20:20, 22/10/2012 19:20:20, Chicago, Washington, False, False, 36.5, False
-1546487, 28/9/2034 12:20:20, 22/10/2012 19:20:20, Paris, Moscow,True, False, 100, True, 23/10/2012 16:20:20, 18:22:00, London
-6563344, 29/11/2012 12:20:20, 22/10/2012 19:20:20, Warsow, Paris, False, True, 300, False
-4353467, 30/12/2013 12:20:20, 22/10/2012 19:20:20, Vaslui, Amsterdam, True, True, 457, True, 23/10/2012 16:20:20, 18:22:00, Ierusalim
-839349, 01/12/2003 12:20:20, 22/10/2012 19:20:20, LalaLand, Daejeon, False, False, 234, True, 23/10/2012 16:20:20, 18:22:00, Iasi
-23534768, 02/11/2002 12:20:20, 22/10/2012 19:20:20, Varsovia, Seul, True, False, 256.32, True, 23/10/2012 16:20:20, 18:22:00, Constanta
-5623409, 03/10/2001 12:20:20, 22/10/2012 19:20:20, Moscow, Budapest, False, False, 354, False
-78434879, 04/9/2003 12:20:20, 22/10/2012 19:20:20, Amsterdam, Lalaland, True, True, 34, True, 23/10/2012 16:20:20, 18:22:00, Cluj
-53234657, 05/8/2019 12:20:20, 22/10/2012 19:20:20, Budapest, Liechtenstein, False, True, 34, False
-7573454, 06/7/2012 12:20:20, 22/10/2012 19:20:20, Chisinau, Iasi, True, True, 234, True, 23/10/2012 16:20:20, 18:22:00, Breazu
-h46341234, 07/6/2004 12:20:20, 22/10/2012 19:20:20, Liechtenstein, Chisinau, False, False, 346, False
-75634423, 08/5/2024 12:20:20, 22/10/2012 19:20:20, Bucharest, Iasi, True, True, 545, False
-8633454, 09/4/2025 12:20:20, 22/10/2012 19:20:20, Iasi, Bucharest, False, True, 1200, False
+1026734, 21/01/2009 12:20, 22/10/2012 19:20, Iasi, Roma, true, false, 123, Qatar Airways, 23/10/2012 12:20, 23/10/2012 14:22, Barcelona
+105634, 22/02/2008 12:20, 22/10/2012 19:20, Breazu, Vienna, false, false, 123.34, Singapore Airlines
+202344, 23/03/2007 12:20, 22/10/2012 19:20, Roma, Bucharest, true, true, 40, Singapore Airlines
+32234324, 24/04/2006 12:20, 22/10/2012 19:20, Vienna, Roma, false, true, 50, Qatar Airways
+1654544, 25/05/2020 12:20, 22/10/2012 19:20, Bucharest, Washington, true, true, 29.99, Emirates, 23/10/2012 16:20, 23/10/2012 18:22, Barcelona
+1984394, 26/06/2021 12:20, 22/10/2012 19:20, Cluj, Otopeni, false, false, 30, Singapore Airlines
+146834, 20/07/2022 12:20, 22/10/2012 19:20, Washington, Chicago, true, true, 51, Hainan Airlines, 23/10/2012 16:20, 23/10/2012 18:22, Budapesta
+184985, 27/08/2023 12:20, 22/10/2012 19:20, Chicago, Washington, false, false, 36.5, Qatar Airways
+1546487, 28/09/2034 12:20, 22/10/2012 19:20, Paris, Moscow, true, false, 100, Emirates, 23/10/2012 16:20, 23/10/2012 18:22, London
+6563344, 29/11/2012 12:20, 22/10/2012 19:20, Warsow, Paris, false, true, 300, Qatar Airways
+4353467, 30/12/2013 12:20, 22/10/2012 19:20, Vaslui, Amsterdam, true, true, 457, Qantas Airways, 23/10/2012 16:20, 23/10/2012 18:22, London
+839349, 01/12/2003 12:20, 22/10/2012 19:20, LalaLand, Daejeon, false, false, 234, Qantas Airways, 23/10/2012 16:20, 23/10/2012 18:22, Iasi
+23534768, 02/11/2002 12:20, 22/10/2012 19:20, Varsovia, Seul, true, false, 256.32, Emirates, 23/10/2012 16:20, 23/10/2012 18:22, London
+5623409, 03/10/2001 12:20, 22/10/2012 19:20, Moscow, Budapest, false, false, 354, Singapore Airlines
+78434879, 04/09/2003 12:20, 22/10/2012 19:20, Amsterdam, Lalaland, true, true, 34, EVA Air, 23/10/2012 16:20, 23/10/2012 18:22, Cluj
+53234657, 05/08/2019 12:20, 22/10/2012 19:20, Budapest, Liechtenstein, false, true, 34, Qatar Airways
+7573454, 06/07/2012 12:20, 22/10/2012 19:20, Chisinau, Iasi, true, true, 234, Qantas Airways, 23/10/2012 16:20,  23/10/2012 18:22, Breazu
+46341234, 07/06/2004 12:20, 22/10/2012 19:20, Liechtenstein, Chisinau, false, false, 346, Singapore Airlines
+75634423, 08/05/2024 12:20, 22/10/2012 19:20, Bucharest, Iasi, true, true, 545, EVA Air
+8633454, 09/04/2025 12:20, 22/10/2012 19:20, Iasi, Bucharest, false, true, 1200, Qatar Airways
